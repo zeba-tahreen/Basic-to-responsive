@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('assets/images/bc.png');
+  }
+  
+  .topnav, a{
+    overflow: hidden;
+    background-color:#ffffff;
+    padding: 14px 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 15px;
+    text-decoration: none;
+
+  }
+
+  .nav-left {
+      float: left;
+      margin-left: 100px;
+      border: none;
+      background-color: #4aaaa5;
+    color: white;
+
+  }
+  .nav-right, a {
+    float: right;
+    margin-right: 15px;
+    border-right: 1px  solid #cccccc;
+    color: #666666;
+    
+}
+.nav-right, a:first-child {
+    border: none
+}
+
+h2 {
+    color: #4aaaa5;
+    padding: 8px;
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.main-container{    
+    border: #dddddd;
+    float: center;
+    
+    padding: 20px;
+
+}
+.content {
+    
+    width:100%;
+    max-width: 960px;
+    background: #ffffff;
+    border: #dddddd;
+    margin-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 125px;
+    padding: 20px;
+}
+.img {
+    float:left; 
+    width: 150px;
+    height:150px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+/*foorter*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    padding: 25px;
+    overflow: hidden;
+ }
+
+ /*Portfolio*/
+ .main {
+     background: #ffffff;
+    max-width: 960px;
+    margin-left:150px;
+    margin-bottom: 150px;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  
+  .column {
+      display: inline-block;
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  /*Contact-form*/ 
+
+
+  #contact-form ul {
+    margin-bottom: 20px;
+
+}
+.li, input, lable {
+    display: block;
+    width: 800px;
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+    list-style-type: none;
+
+    
+}
+
+label, input [type=text], input[type=email], textarea {
+    display: block;
+}
+
+input[type=email], input[type=text], textarea {
+    height: 35px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+} 
+
+textarea {
+    width: 800px;
+    height: 200px;
+}
+input[type=submit] {
+    background: #4aaaa5;
+    border: 0 none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 40px;
+}
+  
