@@ -1,145 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url('assets/images/bc.png');
-  }
-  
-  .topnav, a{
-    overflow: hidden;
-    background-color:#ffffff;
-    padding: 14px 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
-    font-size: 15px;
-    text-decoration: none;
-
-  }
-
-  .nav-left {
-      float: left;
-      margin-left: 100px;
-      border: none;
-      background-color: #4aaaa5;
-    color: white;
-
-  }
-  .nav-right, a {
-    float: right;
-    margin-right: 15px;
-    border-right: 1px  solid #cccccc;
-    color: #666666;
-    
-}
-.nav-right, a:first-child {
-    border: none
-}
-
-h2 {
-    color: #4aaaa5;
-    padding: 8px;
-    border-bottom: 1px solid #dddddd;
-
-}
-
-.main-container{    
-    border: #dddddd;
-    float: center;
-    
-    padding: 20px;
-
-}
-.content {
-    
-    width:100%;
-    max-width: 960px;
-    background: #ffffff;
-    border: #dddddd;
-    margin-left: 150px;
-    margin-top: 30px;
-    margin-bottom: 125px;
-    padding: 20px;
-}
-.img {
-    float:left; 
-    width: 150px;
-    height:150px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
-/*foorter*/
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #666666;
-    color: white;
-    text-align: center;
-    border-top: 8px solid #4aaaa5;
-    padding: 25px;
-    overflow: hidden;
- }
-
- /*Portfolio*/
- .main {
-     background: #ffffff;
-    max-width: 960px;
-    margin-left:150px;
-    margin-bottom: 150px;
-    margin-top: 20px;
-    padding: 30px;
-  }
-  
-  .column {
-      display: inline-block;
-    padding: 8px;
-    margin-right: 10px;
-  }
-
-  /*Contact-form*/ 
-
-
-  #contact-form ul {
-    margin-bottom: 20px;
-
-}
-.li, input, lable {
-    display: block;
-    width: 800px;
-}
-
-#contact-form li {
-    margin-bottom: 10px;
-    list-style-type: none;
-
-    
-}
-
-label, input [type=text], input[type=email], textarea {
-    display: block;
-}
-
-input[type=email], input[type=text], textarea {
-    height: 35px;
-    border: 1px solid #ddd;
-    padding: 0 10px;
-    font-size: 14px;
-} 
-
-textarea {
-    width: 800px;
-    height: 200px;
-}
-input[type=submit] {
-    background: #4aaaa5;
-    border: 0 none;
-    color: #fff;
+    background: url('bc.png');
+    margin:0;
+    padding: 0;
     font-size: 18px;
-    padding: 10px 30px;
-    cursor: pointer;
-    width: 150px;
-    margin-left: 40px;
+    line-height: 34px;
+    color: rgba(12, 12, 12, 0.945);
+
 }
-  
+
+.navbar {
+    background-color:#ffffff;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+/*nav-bar*/
+.navbar a {
+    color: #4aaaa5;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 28px;
+}
+
+
+.navbar a:hover {
+    background: #4aaaa5;
+    color: #ffffff;
+}
+#toggle {
+    display: none;
+}
+
+.togglearea {
+    background: #4aaaa5;
+    border-bottom: black;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.togglearea label {
+    background: #ffffff;
+    height: 45px;
+    width: 50px;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.togglearea label span {
+    background: #4aaaa5;
+    height: 4px;
+    width: 70%;
+    margin: 3px 0px;
+}
+.togglearea {
+    display: none;
+}
+/*content area */
+
+
+.content  {
+    margin:20px;
+    padding:20px;
+}
+
+.container {
+    background: #ffffff;
+    margin: 20px auto;
+    width:85%;
+    max-width: 800px;
+    clear: both;
+    border: 1px solid black;
+
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #4aaaa5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.auth-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+
+/*footer*/
+
+.footer { position: relative;
+    background: rgba(102, 102, 102, 0.692);
+    color:#fff;
+    padding: 30px 0;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+
+
+@media screen and (max-width:600px)
+{ 
+
+        .navbar {
+            flex-direction: column;
+            display: none;
+
+        }
+        #toggle:checked + .navbar {
+            display: flex;
+        }
+        .togglearea {
+            display: flex;
+        }
+        
+
+}
+
